@@ -13,7 +13,7 @@
 var messageAppReference = firebase.database();
 
 $(document).ready(function() {
-    $('#message-form').submit(function (event) {
+    $('#myForm').submit(function (event) {
         event.preventDefault();
         var message = $('#email').val();
         $('#email').val('');
