@@ -15,8 +15,8 @@ var messageAppReference = firebase.database();
 $(document).ready(function() {
     $('#message-form').submit(function (event) {
         event.preventDefault();
-        var message = $('#message').val();
-        $('#message').val('');
+        var message = $('#email').val();
+        $('#email').val('');
         var messagesReference = messageAppReference.ref('messages');
         messagesReference.push({
             message: message,
